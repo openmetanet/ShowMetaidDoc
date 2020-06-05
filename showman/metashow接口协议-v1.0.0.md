@@ -116,7 +116,7 @@
 api请求数据: 
     `{"find":{"data.content":"这是一个测试内容"}, "skip":0, "limit":1}` => Base64URLEncode =>
     
-    http://test.showmoney.app/metaShow/api/v1/query/queryFindMetaData/eyJmaW5kIjp7ImRhdGEuY29udGVudCI6Iui_meaYr-S4gOS4qua1i-ivleWGheWuuSJ9LCAic2tpcCI6MCwgImxpbWl0IjowfQ==
+    http://api.showmoney.app/metaShow/api/v1/query/queryFindMetaData/eyJmaW5kIjp7ImRhdGEuY29udGVudCI6Iui_meaYr-S4gOS4qua1i-ivleWGheWuuSJ9LCAic2tpcCI6MCwgImxpbWl0IjowfQ==
 
 响应数据：
  {
@@ -255,7 +255,7 @@ api请求数据:
     `{"find":{"metaId":"TestShowID","nodeName":"ShowText"}, "skip":0, "limit":0, 
     "format":{"myTag":"metaId","have":"data","myIn":"data.content","h":"blockHeight", "t":"timestamp" ,"address of out":"vouts.0.address"}}` => Base64URLEncode =>
     
-    http://test.showmoney.app/metaShow/api/v1/query/queryFindMetaData/eyJmaW5kIjp7Im1ldGFJZCI6IlRlc3RTaG93SUQiLCJub2RlTmFtZSI6IlNob3dUZXh0In0sICJza2lwIjowLCAibGltaXQiOjAsICJmb3JtYXQiOnsibXlUYWciOiJtZXRhSWQiLCJoYXZlIjoiZGF0YSIsIm15SW4iOiJkYXRhLmNvbnRlbnQiLCJoIjoiYmxvY2tIZWlnaHQiLCAidCI6InRpbWVzdGFtcCIgLCJhZGRyZXNzIG9mIG91dCI6InZvdXRzLjAuYWRkcmVzcyJ9fQ==
+    http://api.showmoney.app/metaShow/api/v1/query/queryFindMetaData/eyJmaW5kIjp7Im1ldGFJZCI6IlRlc3RTaG93SUQiLCJub2RlTmFtZSI6IlNob3dUZXh0In0sICJza2lwIjowLCAibGltaXQiOjAsICJmb3JtYXQiOnsibXlUYWciOiJtZXRhSWQiLCJoYXZlIjoiZGF0YSIsIm15SW4iOiJkYXRhLmNvbnRlbnQiLCJoIjoiYmxvY2tIZWlnaHQiLCAidCI6InRpbWVzdGFtcCIgLCJhZGRyZXNzIG9mIG91dCI6InZvdXRzLjAuYWRkcmVzcyJ9fQ==
 
 响应数据：
 {
@@ -348,7 +348,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://test.showmoney.app/metaShow/api/v1/query/getMetaIDInfo/a717f2b8364ddab277216408230b1485d28ed3a0bd4b00ab7c7b2437fe58af2e
+    http://api.showmoney.app/metaShow/api/v1/query/getMetaIDInfo/a717f2b8364ddab277216408230b1485d28ed3a0bd4b00ab7c7b2437fe58af2e
 
 响应数据：
  {
@@ -410,7 +410,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://test.showmoney.app/metaShow/api/v1/metanet/getNode/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
+    http://api.showmoney.app/metaShow/api/v1/metanet/getNode/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
     
 响应数据：
 {
@@ -466,7 +466,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://test.showmoney.app/metaShow/api/v1/metanet/getParts/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
+    http://api.showmoney.app/metaShow/api/v1/metanet/getParts/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
     
 响应数据：
  {
@@ -527,7 +527,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://test.showmoney.app/metaShow/api/v1/metanet/getRoot/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
+    http://api.showmoney.app/metaShow/api/v1/metanet/getRoot/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
     
 响应数据：
  {
@@ -579,7 +579,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://test.showmoney.app/metaShow/api/v1/metanet/getChildren/8e9b396eb52752c95cfd45b86f9aa90e07e804ac38ff7f7f87669b0af2f06c86
+    http://api.showmoney.app/metaShow/api/v1/metanet/getChildren/8e9b396eb52752c95cfd45b86f9aa90e07e804ac38ff7f7f87669b0af2f06c86
     
 响应数据：
 {
@@ -660,7 +660,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://test.showmoney.app/metaShow/api/v1/metanet/getTree/8e9b396eb52752c95cfd45b86f9aa90e07e804ac38ff7f7f87669b0af2f06c86
+    http://api.showmoney.app/metaShow/api/v1/metanet/getTree/8e9b396eb52752c95cfd45b86f9aa90e07e804ac38ff7f7f87669b0af2f06c86
     
 响应数据：
 {
@@ -793,7 +793,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://test.showmoney.app/metaShow/api/v1/metanet/getMetaNodeByAddress/1GimPAbPAkmexbbdWqe9fQCQpgZdGNdjy7
+    http://api.showmoney.app/metaShow/api/v1/metanet/getMetaNodeByAddress/1GimPAbPAkmexbbdWqe9fQCQpgZdGNdjy7
     
 响应数据：
 {
