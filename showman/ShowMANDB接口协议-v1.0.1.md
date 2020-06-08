@@ -1,13 +1,15 @@
-# ShowMAN-服务接口V1.0.0 - 精简版
+# ShowMANDB-服务接口V1.0.1 - 精简版
 
 ## 修订信息
 
 |       版本	|       时间      |       修订人     |       修订内容        |
 |---------------|----------------|-------------------|-------------------    |
-|	1.0.0		|	2020-06-05	 |		kyle   		 |		创建文档		 |
+|	1.0.0		|	2020-06-05	 |		Kyle   		 |		创建文档		 |
+|	1.0.1		|	2020-06-08	 |		Kyle   		 |		更新文档		 |
 ---
 
 版权声明 - 本文档所有权归ShowPay，最终解释权归ShowPay所有
+
 [TOC]
 
 ## 1 概述
@@ -19,11 +21,11 @@
 
 |	地址名称		|	请求地址					|
 |-------------------|-------------------------|
-|        URL地址           |    https://api.showmoney.app/metaShow |
+|        URL地址           |    https://api.showmoney.app/showMANDB |
 
 	GET - 请求示例：
 	
-	http://XXX.XXX.XXX/XXX/api/v1/XXX/XXX/XXX
+	https://XXX.XXX.XXX/XXX/api/v1/XXX/XXX/XXX
 	
 	响应示例：
 	
@@ -116,7 +118,7 @@
 api请求数据: 
     `{"find":{"data.content":"这是一个测试内容"}, "skip":0, "limit":1}` => Base64URLEncode =>
     
-    http://api.showmoney.app/metaShow/api/v1/query/queryFindMetaData/eyJmaW5kIjp7ImRhdGEuY29udGVudCI6Iui_meaYr-S4gOS4qua1i-ivleWGheWuuSJ9LCAic2tpcCI6MCwgImxpbWl0IjowfQ==
+    https://api.showmoney.app/showMANDB/api/v1/query/queryFindMetaData/eyJmaW5kIjp7ImRhdGEuY29udGVudCI6Iui_meaYr-S4gOS4qua1i-ivleWGheWuuSJ9LCAic2tpcCI6MCwgImxpbWl0IjowfQ==
 
 响应数据：
  {
@@ -255,7 +257,7 @@ api请求数据:
     `{"find":{"metaId":"TestShowID","nodeName":"ShowText"}, "skip":0, "limit":0, 
     "format":{"myTag":"metaId","have":"data","myIn":"data.content","h":"blockHeight", "t":"timestamp" ,"address of out":"vouts.0.address"}}` => Base64URLEncode =>
     
-    http://api.showmoney.app/metaShow/api/v1/query/queryFindMetaData/eyJmaW5kIjp7Im1ldGFJZCI6IlRlc3RTaG93SUQiLCJub2RlTmFtZSI6IlNob3dUZXh0In0sICJza2lwIjowLCAibGltaXQiOjAsICJmb3JtYXQiOnsibXlUYWciOiJtZXRhSWQiLCJoYXZlIjoiZGF0YSIsIm15SW4iOiJkYXRhLmNvbnRlbnQiLCJoIjoiYmxvY2tIZWlnaHQiLCAidCI6InRpbWVzdGFtcCIgLCJhZGRyZXNzIG9mIG91dCI6InZvdXRzLjAuYWRkcmVzcyJ9fQ==
+    https://api.showmoney.app/showMANDB/api/v1/query/queryFindMetaData/eyJmaW5kIjp7Im1ldGFJZCI6IlRlc3RTaG93SUQiLCJub2RlTmFtZSI6IlNob3dUZXh0In0sICJza2lwIjowLCAibGltaXQiOjAsICJmb3JtYXQiOnsibXlUYWciOiJtZXRhSWQiLCJoYXZlIjoiZGF0YSIsIm15SW4iOiJkYXRhLmNvbnRlbnQiLCJoIjoiYmxvY2tIZWlnaHQiLCAidCI6InRpbWVzdGFtcCIgLCJhZGRyZXNzIG9mIG91dCI6InZvdXRzLjAuYWRkcmVzcyJ9fQ==
 
 响应数据：
 {
@@ -348,7 +350,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://api.showmoney.app/metaShow/api/v1/query/getMetaIDInfo/a717f2b8364ddab277216408230b1485d28ed3a0bd4b00ab7c7b2437fe58af2e
+    https://api.showmoney.app/showMANDB/api/v1/query/getMetaIDInfo/a717f2b8364ddab277216408230b1485d28ed3a0bd4b00ab7c7b2437fe58af2e
 
 响应数据：
  {
@@ -375,7 +377,7 @@ api请求数据:
 
 **暂时只支持和Metaid相关数据**
 
-#### 3.2.1 获取节点 `/api/v1/metanet/getNode/<txId>`
+#### 3.2.1 获取节点 `/api/v1/metanet/getNode/<txId>` ***GET***
 
 	请求协议：HTTP GET
 	
@@ -410,7 +412,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://api.showmoney.app/metaShow/api/v1/metanet/getNode/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
+    https://api.showmoney.app/showMANDB/api/v1/metanet/getNode/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
     
 响应数据：
 {
@@ -438,7 +440,7 @@ api请求数据:
 -------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------
 
-#### 3.2.2 获取parts `/api/v1/metanet/getParts/<txId>` 
+#### 3.2.2 获取parts `/api/v1/metanet/getParts/<txId>`  ***GET***
 
 	请求协议：HTTP GET
 	
@@ -466,7 +468,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://api.showmoney.app/metaShow/api/v1/metanet/getParts/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
+    https://api.showmoney.app/showMANDB/api/v1/metanet/getParts/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
     
 响应数据：
  {
@@ -500,7 +502,7 @@ api请求数据:
 -------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------
 
-#### 3.2.3 获取根节点 `/api/v1/metanet/getRoot/<txId>` 
+#### 3.2.3 获取根节点 `/api/v1/metanet/getRoot/<txId>`  ***GET***
 
 	请求协议：HTTP GET
 	
@@ -527,7 +529,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://api.showmoney.app/metaShow/api/v1/metanet/getRoot/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
+    https://api.showmoney.app/showMANDB/api/v1/metanet/getRoot/9f0fa21bfe7706fe51decd468069cd8610d7ceb1a1265f2e17559b75d95cc93c
     
 响应数据：
  {
@@ -547,7 +549,7 @@ api请求数据:
 -------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------
 
-#### 3.2.4 获取子节点 `/api/v1/metanet/getChildren/<txId>` 
+#### 3.2.4 获取子节点 `/api/v1/metanet/getChildren/<txId>`  ***GET***
 
 	请求协议：HTTP GET
 	
@@ -579,7 +581,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://api.showmoney.app/metaShow/api/v1/metanet/getChildren/8e9b396eb52752c95cfd45b86f9aa90e07e804ac38ff7f7f87669b0af2f06c86
+    https://api.showmoney.app/showMANDB/api/v1/metanet/getChildren/8e9b396eb52752c95cfd45b86f9aa90e07e804ac38ff7f7f87669b0af2f06c86
     
 响应数据：
 {
@@ -617,7 +619,7 @@ api请求数据:
 -------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------
 
-#### 3.2.5 获取节点树 `/api/v1/metanet/getTree/<txId>` 
+#### 3.2.5 获取节点树 `/api/v1/metanet/getTree/<txId>`  ***GET***
 
 	请求协议：HTTP GET
 	
@@ -660,7 +662,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://api.showmoney.app/metaShow/api/v1/metanet/getTree/8e9b396eb52752c95cfd45b86f9aa90e07e804ac38ff7f7f87669b0af2f06c86
+    https://api.showmoney.app/showMANDB/api/v1/metanet/getTree/8e9b396eb52752c95cfd45b86f9aa90e07e804ac38ff7f7f87669b0af2f06c86
     
 响应数据：
 {
@@ -761,7 +763,7 @@ api请求数据:
 -------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------
 
-#### 3.2.5 根据address获取节点 `/api/v1/metanet/getMetaNodeByAddress/<address>` 
+#### 3.2.5 根据address获取节点 `/api/v1/metanet/getMetaNodeByAddress/<address>`  ***GET***
 
 	请求协议：HTTP GET
 	
@@ -793,7 +795,7 @@ api请求数据:
 
 ```json
 api请求数据: 
-    http://api.showmoney.app/metaShow/api/v1/metanet/getMetaNodeByAddress/1GimPAbPAkmexbbdWqe9fQCQpgZdGNdjy7
+    https://api.showmoney.app/showMANDB/api/v1/metanet/getMetaNodeByAddress/1GimPAbPAkmexbbdWqe9fQCQpgZdGNdjy7
     
 响应数据：
 {
